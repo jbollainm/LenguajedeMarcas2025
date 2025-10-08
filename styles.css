@@ -1,0 +1,33 @@
+:root {
+  --color-primario: #0077b6; /* Azul vibrante */
+  --color-secundario: #ffb703; /* Amarillo cálido */
+}
+
+body {
+  border: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-primario);
+}
+/* Estilos para el encabezado */
+header {
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: var(--color-secundario);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
