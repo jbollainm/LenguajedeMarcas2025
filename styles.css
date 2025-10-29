@@ -1,13 +1,21 @@
 :root {
   --color-primario: #0077b6; /* Azul vibrante */
   --color-secundario: #ffb703; /* Amarillo cálido */
+  --header-height: 120px; /* pon aquí la altura de tu header */
+}
+
+/* Para navegadores al hacer scroll con anclas */
+html {
+  scroll-padding-top: var(--header-height);
 }
 
 body {
   border: 0px;
   padding: 0px;
+  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-primario);
+  box-sizing: border-box;
 }
 /* Estilos para el encabezado */
 header {
@@ -15,19 +23,94 @@ header {
   color: white;
   padding: 10px 0;
   text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0%;
 }
 
 header h1 {
-  font-size: 24px;
+  font-size: 2em;
+  text-align: left;
+  margin-left: 5%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+nav ul li {
+  text-align: right;
+  display: inline;
+  margin: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Estilos para la sección de contenido */
+main {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  margin: auto 20px;
+  text-align: center;
+  padding-top: 150px;
+}
+
+main h2 {
+  color: #ffc637;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: white;
+  margin: 20px auto;
+  width: 60%;
+  text-align: left;
+}
+
+/* Estilo sección de contacto */
+
+#contact p {
+  width: 40%;
+}
+
+#contact img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+#contact span {
+  font-size: 12px;
+  color: white;
+  display: none;
+}
+#contact span {
+  display: inline;
 }
 
 /* Estilos para el pie de página */
+
 footer {
   background-color: var(--color-secundario);
   color: white;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   width: 100%;
-  bottom: 0;
+  margin: auto;
+  bottom: 0px;
+  display: block;
 }
