@@ -99,7 +99,7 @@ main {
   text-align: center;
   padding-top: 150px;
   animation: fadeInUp 0.5s ease-in-out 1s;
-  z-index: 100;
+  z-index: 100; /* Asegura que el contenido esté por debajo del header */
 }
 
 main h2 {
@@ -120,7 +120,7 @@ p {
   width: 100%;
   height: 50%;
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 15px; /* Bordes redondeados */
 }
 
 #home img:hover {
